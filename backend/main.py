@@ -14,6 +14,8 @@ from backend.services.data_service import (
 from backend.services.risk_service import get_ranked_risk
 from backend.services.explanation_service import explain_risk
 from backend.services.intervention_service import simulate_clear_drain
+from backend.services.priority_service import get_priority_list
+
 
 app = FastAPI(
     title="DrainSight API",
@@ -205,4 +207,19 @@ def clear_drain_simulation(sector: str):
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-    
+
+@app.get("/api/priorities")
+def priorities(limit: int = 10):
+    try:
+        results = get_priority_list(limit)
+
+        return {
+            "count": len(results),
+            "data": results
+        }
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=str(e)
+        )
