@@ -1,0 +1,27 @@
+image_id,filename,label,location,date,source,description,confidence
+G001,G001_Tuplip_Chowk,standing_water,Tulip Chowk,2026-08-23,Hindustan Times,Road heavily waterlogged after rainfall,High
+G002,G002_Sohana_Road,standing_water,Sohana Road,2026-08-23,Hindustan Times,Road heavily waterlogged after rainfall,High
+G003,G003_Tulip_Chowk,blocked,Tulip Chowk,2026-08-27,India Today,Drain obstructed by debris,High
+G004,G004_Vatika_Chowk,partially_blocked,Vatika Chowk,2026-08-27,India Today,Drain partially obstructed by debris,Medium
+G005,G005_Badashapur,standing_water,Badashapur Drain ,2026-08-27,India Today,Drain obstructed by standing water ,High
+G006,G006_Sector38,standing_water,Sector 38 ,2026-08-26,India Today,Road heavily waterlogged after rainfall,High
+G007,G007_Sector38,standing_water,Sector 38 ,2026-08-26,India Today,Road heavily waterlogged after rainfall,High
+G008,G008_NH48,partially_blocked,NH -48 ,2026-05-28,Hindustan Times,Drain partially obstructed by debris,Medium
+G009,G009_Hero_Honda_Chowk,blocked,Hero Honda Chowk,2026-05-28,Hindustan Times,Drain obstructed by debris,High
+G010,G010-Sector10,blocked,Sector 10,2026-06-24,Jagran,Drain obstructed by debris,High
+G011,G011_CyberCity,standing_water,Cyber City,2026-06-24,Jagran,Road heavily waterlogged after rainfall,High
+G012,G012_Sector5,standing_water,Cyber City,2026-06-24,Times of India ,Road heavily waterlogged after rainfall,High
+G013,G013_Sector103,partially_blocked,Sector 103,2026-01-14,Hindustan Times,Drain partially obstructed by debris,Medium
+G014,G014_Palam_Vihar,blocked,Palam Vihar,2025-06-25,Times of India ,Drain obstructed by debris,High
+G015,G015_Sector52,standing_water,Sector 52,2025-05-02,The Indian Express,Road heavily waterlogged after rainfall,High
+G016,G016_NH8,partially_blocked,Sector 103,2021-07-26,Times of India ,Drain partially obstructed by debris,Medium
+G017,G017_Sector23,standing_water,Sector 23,2019-01-14,Times of India ,Road waterlogged after rainfall,Medium
+G018,G018_DLF,blocked,DLF,2017-02-03,Times of India ,Drain obstructed by debris,High
+G019,G019_Badshapur,blocked,Badashapur Drain ,2017-07-08,Hindustan Times,Drain obstructed by debris,High
+G020,G020_Sector27,partially_blocked,Sector 27,2019-06-13,Hindustan Times,Drain partially obstructed by debris,Medium
+G021,G021_Sector50,standing_water,Sector 23,2025-06-25,Times of India ,Road waterlogged after rainfall,Medium
+G022,G022_Sector53,clear,Sector 53,2021-07-26,Times of India ,Drain is clear,low
+G023,G023_Sector47,clear,Sector 47,2026-06-24,The Indian Express,Drain is clear,low
+G024,G024_Palam_Vihar,clear,Palam Vihar,2026-01-14,The Indian Express,Drain is clear,low
+G025,G025_Sector78,clear,Sector 78,2026-06-24,Hindustan Times,Drain is clear,low
+G026,G026_Secto56,clear,Sector 56,2026-05-28,Hindustan Times,Drain is clear,low
