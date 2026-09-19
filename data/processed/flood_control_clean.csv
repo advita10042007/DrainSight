@@ -1,0 +1,98 @@
+event_id,date,location,latitude,longitude,coordinate_status,sector,evidence,exposure_type,cause,cause_category,source
+FCO22-001,2022,Bajghera,,,missing,Gurugram,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Najafgarh Drain,najafgarh_overflow,Flood Control Order 2022
+FCO22-002,2022,Chandu,,,missing,Gurugram,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Najafgarh Drain,najafgarh_overflow,Flood Control Order 2022
+FCO22-003,2022,Budhera,,,missing,Gurugram,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Najafgarh Drain,najafgarh_overflow,Flood Control Order 2022
+FCO22-004,2022,Daultabad,,,missing,Gurugram,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Najafgarh Drain,najafgarh_overflow,Flood Control Order 2022
+FCO22-005,2022,Sultanpur,,,missing,Farrukhnagar,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Najafgarh Drain,najafgarh_overflow,Flood Control Order 2022
+FCO22-006,2022,Kaliawas,,,missing,Farrukhnagar,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Najafgarh Drain,najafgarh_overflow,Flood Control Order 2022
+FCO22-007,2022,Jhanjrola,,,missing,Farrukhnagar,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Najafgarh Drain,najafgarh_overflow,Flood Control Order 2022
+FCO22-008,2022,Sarmathla,,,missing,Sohna,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sarhala Drain,sarhala_overflow,Flood Control Order 2022
+FCO22-009,2022,Lohsingan,,,missing,Sohna,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sarhala Drain,sarhala_overflow,Flood Control Order 2022
+FCO22-010,2022,Ghangola,,,missing,Sohna,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sarhala Drain,sarhala_overflow,Flood Control Order 2022
+FCO22-011,2022,Khor,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-012,2022,Goriawas,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-013,2022,Khanpur,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-014,2022,Hera Heri,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-015,2022,Mumtazpur,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-016,2022,Turkapur,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-017,2022,Dewlawas,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-018,2022,Mubarakpur,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-019,2022,Muzaffra,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-020,2022,Shahpur Jat,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-021,2022,Inchapuri,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-022,2022,Bapas,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-023,2022,Barheri rehnwa,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-024,2022,Khalilpur,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-025,2022,Ghilnawas,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-026,2022,Rajpura,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-027,2022,Gudhana,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-028,2022,Jasat,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-029,2022,Brijpura,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-030,2022,Chhawan,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-031,2022,Mau,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-032,2022,Lokra,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-033,2022,Darapur,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-034,2022,Baspadamka,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-035,2022,Uncha Majra,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-036,2022,Narhera,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-037,2022,Bohra Khurd,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-038,2022,Lokri,,,missing,Pataudi,Dangerously exposed area; Table 3.1,dangerously_exposed,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-039,2022,Mohammadhari,,,missing,Gurugram,Likely to be marooned; Table 3.2,likely_marooned,,unknown,Flood Control Order 2022
+FCO22-040,2022,Daultabad,,,missing,Gurugram,Likely to be marooned; Table 3.2,likely_marooned,,unknown,Flood Control Order 2022
+FCO22-041,2022,Rajpur,,,missing,Pataudi,Likely to be marooned; Table 3.2,likely_marooned,,unknown,Flood Control Order 2022
+FCO22-042,2022,Jataula,,,missing,Pataudi,Likely to be marooned; Table 3.2,likely_marooned,,unknown,Flood Control Order 2022
+FCO22-043,2022,Khalilpur,,,missing,Pataudi,Likely to be marooned; Table 3.2,likely_marooned,,unknown,Flood Control Order 2022
+FCO22-044,2022,Bapas,,,missing,Pataudi,Likely to be marooned; Table 3.2,likely_marooned,,unknown,Flood Control Order 2022
+FCO22-045,2022,Mehniawas,,,missing,Pataudi,Likely to be marooned; Table 3.2,likely_marooned,,unknown,Flood Control Order 2022
+FCO22-046,2022,Sadharana,,,missing,Gurugram,Moderately exposed; Table 3.3,other,Overflow of Najafgarh Drain,najafgarh_overflow,Flood Control Order 2022
+FCO22-047,2022,Bhora Khurd,,,missing,Gurugram,Moderately exposed; Table 3.3,other,Overflow of Najafgarh Drain,najafgarh_overflow,Flood Control Order 2022
+FCO22-048,2022,Rathiwas,,,missing,Gurugram,Moderately exposed; Table 3.3,other,Overflow of Najafgarh Drain,najafgarh_overflow,Flood Control Order 2022
+FCO22-049,2022,Pathrari,,,missing,Gurugram,Moderately exposed; Table 3.3,other,Overflow of Najafgarh Drain,najafgarh_overflow,Flood Control Order 2022
+FCO22-050,2022,Bhudka,,,missing,Gurugram,Moderately exposed; Table 3.3,other,Overflow of Najafgarh Drain,najafgarh_overflow,Flood Control Order 2022
+FCO22-051,2022,Bilaspur,,,missing,Gurugram,Moderately exposed; Table 3.3,other,Overflow of Najafgarh Drain,najafgarh_overflow,Flood Control Order 2022
+FCO22-052,2022,Mubarakpur,,,missing,Farrukhnagar,Moderately exposed; Table 3.3,other,Overflow of Najafgarh Drain,najafgarh_overflow,Flood Control Order 2022
+FCO22-053,2022,Palri,,,missing,Farrukhnagar,Moderately exposed; Table 3.3,other,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-054,2022,Faridpur,,,missing,Farrukhnagar,Moderately exposed; Table 3.3,other,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-055,2022,Garhi Nathe Khan,,,missing,Farrukhnagar,Moderately exposed; Table 3.3,other,Overflow of Sarhala Drain,sarhala_overflow,Flood Control Order 2022
+FCO22-056,2022,Alimuddinpur,,,missing,Farrukhnagar,Moderately exposed; Table 3.3,other,Overflow of Sarhala Drain,sarhala_overflow,Flood Control Order 2022
+FCO22-057,2022,Dooma,,,missing,Farrukhnagar,Moderately exposed; Table 3.3,other,Overflow of Sarhala Drain,sarhala_overflow,Flood Control Order 2022
+FCO22-058,2022,Baduna,,,missing,Farrukhnagar,Moderately exposed; Table 3.3,other,Overflow of Sarhala Drain,sarhala_overflow,Flood Control Order 2022
+FCO22-059,2022,Daboda,,,missing,Farrukhnagar,Moderately exposed; Table 3.3,other,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-060,2022,Rajpura,,,missing,Farrukhnagar,Moderately exposed; Table 3.3,other,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-061,2022,Tirpadi,,,missing,Farrukhnagar,Moderately exposed; Table 3.3,other,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-062,2022,Khurampur,,,missing,Farrukhnagar,Moderately exposed; Table 3.3,other,Overflow of Sabi and Indori River,sabi_indori_overflow,Flood Control Order 2022
+FCO22-U001,2022,Galleria Market Exit Point Chakkarpur,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U002,2022,"Main Road near Sector-27, Community Center",,,missing,Sector 27,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U003,2022,"Ambedkar Bhawan, Harijan Basti, Nathupur",,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U004,2022,"Shiv Mandir, Nathupur",,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U005,2022,"Budd Wala Booster, Nathupur",,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U006,2022,"Sheeba & Hermitage Apartments, Sector-28",,,missing,Sector 28,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U007,2022,Near Samadhan HUB at Sector-43,,,missing,Sector 43,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U008,2022,Rajeev Chowk NH-48 & Naharpur Roopa FBO NH-48,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U009,2022,Hero Honda Chowk & Opposite TPS-1st,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U010,2022,Infront of Medanta Hospital,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U011,2022,Sector-15,,,missing,Sector 15,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U012,2022,T-Point of District Court & Rajeev Chowk near PWD Rest House,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U013,2022,Nehru Stadium Road Jail Chowk to Mor Chowk & Harish Bekari Ward no. 19,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U014,2022,Medanta Road Under Pass,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U015,2022,"Housing Board Colony/Jyoti Hospital, Near Patel Nagar",,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U016,2022,Sector 40 Ward No 19,,,missing,Sector 40,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U017,2022,Sector-28 near Bandh,,,missing,Sector 28,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U018,2022,Mayfield Garden,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U019,2022,South City and Sheespal Vihar,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U020,2022,Artemis/Ambedkar Chowk,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U021,2022,Subhash Chowk,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U022,2022,2 no Storm Water Disposal in Sector 34 near Badshapur Drain & Sec-34 Chowk,,,missing,Sector 34,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U023,2022,Bakhtawar Chowk,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U024,2022,Good Earth T-Point,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U025,2022,"Mayfield Garden Chowk near Cloud 9 Hospital, Sector-46/47",,,missing,Sector 46/47,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U026,2022,Sec-55/56 Vatika Chowk Sohna Road,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U027,2022,CRPF Chowk,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U028,2022,Sec 70/73 SPR near St. Xavier School,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U029,2022,"Darbaripur Road, Saini Mohalla, Village Badshapur",,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U030,2022,Ramgarh Sec-65/67 Chowk near Badshapur sec 65/67,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U031,2022,Sohna Road near Govt. School Badshahpur,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U032,2022,Exit from Signature Tower underpass towards Huda City Centre near U Turn and South City,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U033,2022,South City-1,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U034,2022,Wazirabad Red Light,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
+FCO22-U035,2022,Gold Sukh Chowk & Kanhai Chowk,,,missing,,Identified critical point prone to storm water stagnation; Table 3.4,other,Storm-water stagnation / waterlogging,stormwater_stagnation,Flood Control Order 2022
