@@ -1,0 +1,133 @@
+import pandas as pd
+from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+
+from backend.services.data_service import (
+    load_risk_features,
+    load_hotspots,
+    load_flood_events,
+    load_road_features,
+    load_rainfall,
+)
+
+
+app = FastAPI(
+    title="DrainSight API",
+    description="Backend API for DrainSight flood-risk monitoring",
+    version="1.0.0",
+)
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+@app.get("/")
+def root():
+    return {
+        "message": "DrainSight backend is running"
+    }
+
+
+@app.get("/api/health")
+def health():
+    return {
+        "status": "ok",
+        "service": "DrainSight backend"
+    }
+
+
+@app.get("/api/risk")
+def get_risk():
+    try:
+        df = load_risk_features()
+
+        records = df.to_dict(orient="records")
+
+        return {
+            "count": len(records),
+            "data": records
+        }
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=str(e)
+        )
+
+
+@app.get("/api/hotspots")
+def get_hotspots():
+    try:
+        df = load_hotspots()
+
+        # Convert missing values to JSON-safe null values
+        records = df.astype(object).where(pd.notna(df), None).to_dict(
+            orient="records"
+        )
+
+        return {
+            "count": len(records),
+            "data": records
+        }
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+@app.get("/api/flood-events")
+def get_flood_events():
+    try:
+        df = load_flood_events()
+
+        # Convert missing values to JSON-safe null values
+        records = df.astype(object).where(pd.notna(df), None).to_dict(
+            orient="records"
+        )
+
+        return {
+            "count": len(records),
+            "data": records
+        }
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+@app.get("/api/roads")
+def get_roads():
+    try:
+        df = load_road_features()
+
+        records = df.to_dict(orient="records")
+
+        return {
+            "count": len(records),
+            "data": records
+        }
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=str(e)
+        )
+
+
+@app.get("/api/rainfall")
+def get_rainfall():
+    try:
+        df = load_rainfall()
+
+        records = df.to_dict(orient="records")
+
+        return {
+            "count": len(records),
+            "data": records
+        }
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=str(e)
+        )
