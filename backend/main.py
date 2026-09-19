@@ -15,6 +15,8 @@ from backend.services.risk_service import get_ranked_risk
 from backend.services.explanation_service import explain_risk
 from backend.services.intervention_service import simulate_clear_drain
 from backend.services.priority_service import get_priority_list
+from backend.services.routing_service import calculate_route
+
 
 
 app = FastAPI(
@@ -217,6 +219,29 @@ def priorities(limit: int = 10):
             "count": len(results),
             "data": results
         }
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=str(e)
+        )
+
+@app.get("/api/routes")
+def routes(
+    start_lat: float,
+    start_lon: float,
+    end_lat: float,
+    end_lon: float
+):
+    try:
+        result = calculate_route(
+            start_lat=start_lat,
+            start_lon=start_lon,
+            end_lat=end_lat,
+            end_lon=end_lon
+        )
+
+        return result
 
     except Exception as e:
         raise HTTPException(
