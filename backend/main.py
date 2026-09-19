@@ -1,6 +1,7 @@
-import pandas as pd
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+import pandas as pd
 
 from backend.services.data_service import (
     load_risk_features,
@@ -10,6 +11,9 @@ from backend.services.data_service import (
     load_rainfall,
 )
 
+from backend.services.risk_service import get_ranked_risk
+from backend.services.explanation_service import explain_risk
+from backend.services.intervention_service import simulate_clear_drain
 
 app = FastAPI(
     title="DrainSight API",
@@ -131,3 +135,74 @@ def get_rainfall():
             status_code=500,
             detail=str(e)
         )
+@app.get("/api/ranked-risk")
+def ranked_risk():
+    try:
+        df = get_ranked_risk()
+
+        records = (
+            df.astype(object)
+            .where(pd.notna(df), None)
+            .to_dict(orient="records")
+        )
+
+        return {
+            "count": len(records),
+            "data": records
+        }
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=str(e)
+        )
+
+@app.get("/api/risk/{sector}")
+def risk_explanation(sector: str):
+    try:
+        df = get_ranked_risk()
+
+        matches = df[
+            df["sector"].astype(str).str.lower()
+            == sector.lower()
+        ]
+
+        if matches.empty:
+            raise HTTPException(
+                status_code=404,
+                detail=f"Sector '{sector}' not found"
+            )
+
+        row = matches.iloc[0]
+
+        return {
+            "sector": row["sector"],
+            "risk_score": float(row["risk_score"]),
+            "risk_level": row["risk_level"],
+            "reasons": explain_risk(row)
+        }
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/api/intervention/clear-drain/{sector}")
+def clear_drain_simulation(sector: str):
+    try:
+        result = simulate_clear_drain(sector)
+
+        if result is None:
+            raise HTTPException(
+                status_code=404,
+                detail=f"Sector '{sector}' not found"
+            )
+
+        return result
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    
