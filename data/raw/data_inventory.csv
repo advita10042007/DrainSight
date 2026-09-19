@@ -1,0 +1,8 @@
+dataset,file,status,used_for
+Road network,pilot.osm,available,OpenStreetMap base data
+Road graph,roads.graphml,available,Routing and road exposure
+Rainfall,rainfall.csv,available,Rainfall scenarios
+Elevation,pilot_dem.tif,not available,Deferred
+Flood hotspots,flood_hotspots.csv,pending,Historical validation
+Critical locations,critical_locations.csv,pending,Emergency/accessibility weighting
+Drain images,data/images/,pending,Drain condition classification
