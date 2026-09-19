@@ -6,3 +6,4 @@ Elevation,pilot_dem.tif,not available,Deferred
 Flood hotspots,flood_hotspots.csv,pending,Historical validation
 Critical locations,critical_locations.csv,pending,Emergency/accessibility weighting
 Drain images,data/images/,pending,Drain condition classification
+Pilot area,pilot_area.csv,available,Common geographic reference for all team modules
