@@ -161,14 +161,31 @@ def ranked_risk():
             detail=str(e)
         )
 
+def normalize_sector_input(sector):
+    sector = str(sector).strip()
+
+    # If input is just a number, convert it to "Sector X"
+    if sector.isdigit():
+        return f"Sector {int(sector)}"
+
+    # If input is already "Sector X", standardize spacing/case
+    if sector.lower().startswith("sector "):
+        number = sector.split()[-1]
+        if number.isdigit():
+            return f"Sector {int(number)}"
+
+    return sector
+
 @app.get("/api/risk/{sector}")
 def risk_explanation(sector: str):
     try:
         df = get_ranked_risk()
 
+        normalized_sector = normalize_sector_input(sector)
+
         matches = df[
             df["sector"].astype(str).str.lower()
-            == sector.lower()
+            == normalized_sector.lower()
         ]
 
         if matches.empty:
@@ -179,23 +196,61 @@ def risk_explanation(sector: str):
 
         row = matches.iloc[0]
 
+        reasons = []
+
+        if row.get("historical_component", 0) > 50:
+            reasons.append(
+                "The location has a strong history of flooding."
+            )
+
+        if row.get("drain_condition_component", 0) > 50:
+            reasons.append(
+                "Drain or water-risk indicators are elevated."
+            )
+
+        if row.get("rainfall_component", 0) > 50:
+            reasons.append(
+                "Rainfall conditions contribute significantly to risk."
+            )
+
+        if row.get("road_importance_component", 0) > 50:
+            reasons.append(
+                "The area contains relatively important road infrastructure."
+            )
+
+        if row.get("connectivity_component", 0) > 50:
+            reasons.append(
+                "The area has high road connectivity."
+            )
+
+        if not reasons:
+            reasons.append(
+                "Risk indicators are currently relatively low."
+            )
+
         return {
             "sector": row["sector"],
-            "risk_score": float(row["risk_score"]),
+            "risk_score": row["risk_score"],
             "risk_level": row["risk_level"],
-            "reasons": explain_risk(row)
+            "reasons": reasons
         }
 
     except HTTPException:
         raise
+
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(
+            status_code=500,
+            detail=str(e)
+        )
 
 
 @app.get("/api/intervention/clear-drain/{sector}")
 def clear_drain_simulation(sector: str):
     try:
-        result = simulate_clear_drain(sector)
+        normalized_sector = normalize_sector_input(sector)
+
+        result = simulate_clear_drain(normalized_sector)
 
         if result is None:
             raise HTTPException(
@@ -207,8 +262,12 @@ def clear_drain_simulation(sector: str):
 
     except HTTPException:
         raise
+
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(
+            status_code=500,
+            detail=str(e)
+        )
 
 @app.get("/api/priorities")
 def priorities(limit: int = 10):
