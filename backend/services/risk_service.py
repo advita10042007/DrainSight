@@ -29,10 +29,14 @@ def normalize_series(series):
     )
 
 
-def calculate_sector_risk():
+def calculate_sector_risk(rain_mm: float | None = None):
     """
     Calculate a transparent pilot flood-risk score
     using existing DrainSight datasets.
+
+    rain_mm optionally overrides the rainfall scenario
+    (e.g. 25 / 50 / 75 / 100 from the frontend simulator).
+    When None, the total from rainfall.csv is used.
     """
 
     risk_df = load_risk_features().copy()
@@ -67,14 +71,17 @@ def calculate_sector_risk():
         risk_df["drain_condition_component"] = 0
 
     # Rainfall component
-    rainfall_df = load_rainfall().copy()
+    if rain_mm is not None:
+        total_rainfall = float(rain_mm)
+    else:
+        rainfall_df = load_rainfall().copy()
 
-    rainfall_df["rain_mm"] = pd.to_numeric(
-        rainfall_df["rain_mm"],
-        errors="coerce"
-    ).fillna(0)
+        rainfall_df["rain_mm"] = pd.to_numeric(
+            rainfall_df["rain_mm"],
+            errors="coerce"
+        ).fillna(0)
 
-    total_rainfall = rainfall_df["rain_mm"].sum()
+        total_rainfall = rainfall_df["rain_mm"].sum()
 
     rainfall_score = min(
         float(total_rainfall),
@@ -147,12 +154,12 @@ def calculate_sector_risk():
     return risk_df
 
 
-def get_ranked_risk():
+def get_ranked_risk(rain_mm: float | None = None):
     """
     Return sectors ranked from highest to lowest risk.
     """
 
-    df = calculate_sector_risk()
+    df = calculate_sector_risk(rain_mm=rain_mm)
 
     return df.sort_values(
         "risk_score",

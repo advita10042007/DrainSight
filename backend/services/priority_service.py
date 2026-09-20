@@ -1,14 +1,14 @@
 from backend.services.risk_service import get_ranked_risk
 
 
-def get_priority_list(limit=10):
-    df = get_ranked_risk().head(limit).copy()
+def get_priority_list(limit=10, rain_mm: float | None = None):
+    df = get_ranked_risk(rain_mm=rain_mm).head(limit).copy()
 
     results = []
 
-    for index, row in df.iterrows():
+    for rank, (_, row) in enumerate(df.iterrows(), start=1):
         results.append({
-            "rank": index + 1,
+            "rank": rank,
             "sector": row["sector"],
             "risk_score": float(row["risk_score"]),
             "risk_level": row["risk_level"],
